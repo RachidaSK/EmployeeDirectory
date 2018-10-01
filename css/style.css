@@ -1,0 +1,59 @@
+body, input.form-control {
+    font-family: 'Roboto', Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.5;
+    background: #fff;
+    color: #262a2c;
+}
+.navbar {
+    float: left;
+    width: 200px;
+    min-height: -webkit-fill-available;
+    background: #333;
+    color:#fff;
+    cursor: pointer;
+}
+a.nav-item.nav-link.active:hover {
+    color : aquamarine;
+}
+a.nav-item.nav-link.active:active {
+    color : orange;
+}
+.menu-links {
+    margin:10px 0px;
+}
+
+.logo {
+    font-size: 48px;
+}
+.top-input {
+    margin-top: 10px;
+    margin-bottom:20px;
+}
+.btn {
+    background:#333;
+    color: #eee;
+    font-size: 18px;
+    padding: 5px 20px;
+}
+.search-icon {
+    font-size: 25px;
+    background: #eee;
+    color:#262a2c;
+    border: 1px solid #eee;
+    padding: 5px;
+}
+
+.employee-info {
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+    padding: 20px 0px 30px 40px;
+}
+
+/*------------------------
+    HIDE CLASS
+---------------------------*/
+
+.hide {
+    display: none;
+  }
