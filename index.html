@@ -15,66 +15,74 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="menu mx-auto my-auto">
-      <div class="navbar-nav">
-        <a class="navbar-brand">
-          <i class="far fa-address-book logo"></i>
-        </a>
-      </div>
-      <div class="navbar-nav menu-links">
-        <a class="nav-item nav-link active" id="view">View<span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link active" id="add">Add<span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link active" id="verify">Verify<span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link active" id="update">Update<span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link active" id="delete">Delete<span class="sr-only">(current)</span></a>
-      </div>
-    </div>
-  </nav>
-
   <div class="container">
-    <div id="add-page" class="row hide">
-      <div class="col-md-12 top-input">
-        <form>
-          <div class="form-row">
-            <div class="col-md-3">
-              <input type="text" class="form-control" placeholder="Employee name" id="name">
-            </div>
-            <div class="col-md-3">
-              <input type="text" class="form-control" placeholder="Office number" id="office">
-            </div>
-            <div class="col-md-3">
-              <input type="text" class="form-control" placeholder="Phone number" id="phone">
-            </div>
-            <div class="col-md-1">
-              <button type="button" id="btn-add" class="btn btn-light btn-sm">Add</button>
-              <button type="button" id="btn-update" class="btn btn-light btn-sm hide">Update</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div id="verify-page" class="row hide">
-      <div class="col-md-12 top-input">
-        <form>
-          <div class="form-row d-flex justify-content-center">
-            <div class="col-md-4">
-              <input type="text" class="form-control" placeholder="Please enter a name" id="verName">
-            </div>
-            <div class="col-md-1">
-              <i id="verify-icon" class="fas fa-search search-icon"></i>
-              <button type="button" id="btn-delete" class="btn btn-light btn-sm hide">Delete</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
     <div class="row">
-      <div class="col-md-12">
-        <p id=search-result></p>
+      <div class="col-md-2 naviguation">
+        <nav class="navbar ">
+          <div class="menu mx-auto">
+            <div class="navbar-nav">
+              <a class="navbar-brand">
+                <i class="far fa-address-book logo"></i>
+              </a>
+            </div>
+            <div class="navbar-nav menu-links">
+              <a class="nav-item nav-link active" id="view">View<span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link active" id="add">Add<span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link active" id="verify">Verify<span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link active" id="update">Update<span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link active" id="delete">Delete<span class="sr-only">(current)</span></a>
+            </div>
+          </div>
+        </nav>
       </div>
-    </div>
-    <div class="employee-list" id="view-page">
+
+      <div class="col-md-10">
+        <div class="container employee">
+          <div id="add-page" class="row hide">
+            <div class="col-md-12 top-input">
+              <form>
+                <div class="form-row">
+                  <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="Employee name" id="name">
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="Office number" id="office">
+                  </div>
+                  <div class="col-md-3">
+                    <input type="text" class="form-control" placeholder="Phone number" id="phone">
+                  </div>
+                  <div class="col-md-1">
+                    <button type="button" id="btn-add" class="btn btn-light btn-sm">Add</button>
+                    <button type="button" id="btn-update" class="btn btn-light btn-sm hide">Update</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div id="verify-page" class="row hide">
+            <div class="col-md-12 top-input">
+              <form>
+                <div class="form-row d-flex justify-content-center">
+                  <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Please enter a name" id="verName">
+                  </div>
+                  <div class="col-md-1">
+                    <i id="verify-icon" class="fas fa-search search-icon"></i>
+                    <button type="button" id="btn-delete" class="btn btn-light btn-sm hide">Delete</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p id=search-result></p>
+            </div>
+          </div>
+          <div class="employee-list" id="view-page">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 

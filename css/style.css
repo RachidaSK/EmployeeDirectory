@@ -5,11 +5,13 @@ body, input.form-control {
     background: #fff;
     color: #262a2c;
 }
+.naviguation {
+    background: #333;
+    
+}
 .navbar {
     float: left;
-    width: 200px;
-    min-height: -webkit-fill-available;
-    background: #333;
+    width:inherit;
     color:#fff;
     cursor: pointer;
 }
@@ -19,8 +21,15 @@ a.nav-item.nav-link.active:hover {
 a.nav-item.nav-link.active:active {
     color : orange;
 }
+.menu {
+    margin-top: 70px;
+}
 .menu-links {
     margin:10px 0px;
+}
+
+.employee {
+    margin-left: 30px;
 }
 
 .logo {
