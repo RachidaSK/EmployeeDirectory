@@ -76,7 +76,8 @@ const verifyName = function () {
   for (let i = 0; i < employeeList.length; i++) {
     if (employeeList[i].name.includes(searchName)) {
       $("#search-result").text("yes");
-    } /*else {document.querySelector("#search-result").innerText= "no";}*/
+      return;
+    } else { document.querySelector("#search-result").innerText = "no"; }
   }
   $("#verName").val(" ");
 }
@@ -108,7 +109,7 @@ const deleteName = function () {
 
     if (employeeList[i].name === delName) {
       console.log("yes it works");
-      employeeList.splice(i,1);
+      employeeList.splice(i, 1);
       break;
     }
   }
