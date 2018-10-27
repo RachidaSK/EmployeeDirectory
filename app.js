@@ -2,6 +2,7 @@
 const showView = function () {
   $("#verify-page").addClass("hide");
   $("#add-page").addClass("hide");
+  $("#search").addClass("hide");
   $("#view-page").removeClass("hide");
 };
 
@@ -11,6 +12,7 @@ const showAdd = function () {
   $("#view-page").removeClass("hide");
   $("#btn-add").removeClass("hide");
   $("#btn-update").addClass("hide");
+  $("#search").addClass("hide");
 };
 
 const showVerify = function () {
@@ -19,6 +21,7 @@ const showVerify = function () {
   $("#view-page").addClass("hide");
   $("#verify-icon").removeClass("hide");
   $("#btn-delete").addClass("hide");
+  $("#search").removeClass("hide");
 };
 
 const showUpdate = function () {
@@ -27,6 +30,7 @@ const showUpdate = function () {
   $("#view-page").removeClass("hide");
   $("#btn-add").addClass("hide");
   $("#btn-update").removeClass("hide");
+  $("#search").addClass("hide");
 };
 
 const showDelete = function () {
@@ -35,6 +39,7 @@ const showDelete = function () {
   $("#view-page").removeClass("hide");
   $("#verify-icon").addClass("hide");
   $("#btn-delete").removeClass("hide");
+  $("#search").addClass("hide");
 };
 
 $("#view").on("click", showView);
