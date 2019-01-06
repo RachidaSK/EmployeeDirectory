@@ -1,6 +1,8 @@
 # EmployeeDirectory
 
-Employee Directory is a 100% responsive website that allows client to :
+## Overview
+
+Employee Directory is a 100% responsive single page application that allows client to :
 
 * Add  new employee
 
@@ -11,3 +13,10 @@ Employee Directory is a 100% responsive website that allows client to :
 * Delete employee
 
 * Verify if an employee exist
+
+## Technologies Used:
+
+* HTML5.
+* CSS3.
+* Bootstrap.
+* JavaScript.
